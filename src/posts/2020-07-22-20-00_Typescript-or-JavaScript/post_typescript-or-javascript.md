@@ -4,12 +4,16 @@ permalink: typescript-or-javascript
 thumbnail: thumbnail_typescript-or-javascript.webp
 featured: false
 tags: [TypeScript, JavaScript, OOP, Object Composition]
-excerpt: 'Which is better? To draw an analogy, JavaScript is a jump-jet and TypeScript is an aircraft carrier; And even though TypeScript is safe, its still not safe enough to run a nuclear power plant.'
+excerpt: 'To draw an analogy, JavaScript is a jump-jet and TypeScript is an aircraft carrier; And even though TypeScript is safe, its still not safe enough to run a nuclear power plant.'
 authors: [F1LT3R]
 type: article
 ---
 
-If the question is "TypeScript or JavaScript", then the answer is "JavaScript"! But why?
+If the question is "TypeScript or JavaScript?"
+
+Then the answer is "JavaScript!"
+
+But why?
 
 1. Better composability
 2. Faster development
@@ -36,7 +40,6 @@ For example: here is the Enclosed Object equivalent of a Class:
 
 ```js
 // Counter.mjs
-
 export const Counter = (count = 0) => ({
   add: () => (count += 1),
   get count() {
