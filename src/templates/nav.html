@@ -1,0 +1,8 @@
+<ul>
+    <li><a href="/">🏠</a></li>
+    {{#each pages as | page |}}
+    {{#if page.attributes.nav}}
+    <li><a href="{{page.url}}">{{page.attributes.name}}</a></li>
+    {{/if}}
+    {{/each}}
+</ul>

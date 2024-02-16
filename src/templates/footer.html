@@ -1,0 +1,21 @@
+<section class="avatar">
+    <img src="{{site.author_avatar}}" />
+</section>
+
+<section class="personal">
+    <ul>
+        <li><h4>{{site.author_nickname}}</h4></li>
+        <li>{{site.author_name}}</li>
+        <li><a href="mailto:{{site.author_email}}">{{site.author_email}}</a></li>
+    </ul>
+</section>
+
+<section class="social">
+    <ul>
+    {{#each social as | social |}}
+    <li>
+        <img src="{{social.logo}}" />
+        <a href="{{social.url}}" class="{{social.type}}">{{social.type}}</a>
+    </li>
+    {{/each}}
+</section>

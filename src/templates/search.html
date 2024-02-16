@@ -1,0 +1,36 @@
+<div class="search">
+    <h2>Search</h2>
+
+    <div class="input">
+        <input type="text" name="term" />
+        <label for="term">Search Term</label>
+    </div>
+    <div class="input">
+        <input type="checkbox" name="posts" checked />
+        <label for="posts">Search in Posts</label>
+    </div>
+    <div class="input">
+        <input type="checkbox" name="pages" />
+        <label for="pages">Search in Pages</label>
+    </div>
+    <div class="input">
+        <input type="checkbox" name="tags" />
+        <label for="tags">Search in Tags</label>
+    </div>
+    <div class="input">
+        <input type="checkbox" name="authors" />
+        <label for="authors">Search in Authors</label>
+    </div>
+</div>
+
+<div class="results">
+    <div class="posts">
+        {{#each post}}
+        <div class="post">
+            <img src="{{post.thumbnail}}" />
+            <h3><a href="{{post.url}}">{{post.title}}</a></h3>
+            <p>{{post.excerpt}}</p>
+        </div>
+        {{/each}}
+    </div>
+</div>

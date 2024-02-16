@@ -1,0 +1,9 @@
+<div class="posts">
+    {{#each post}}
+    <div class="post">
+        <img src="{{post.thumbnail}}" />
+        <h3><a href="{{post.url}}">{{post.title}}</a></h3>
+        <p>{{post.excerpt}}</p>
+    </div>
+    {{/each}}
+</div>
