@@ -25,26 +25,16 @@
 <meta name="twitter:creator" content="{{twitter_creator}}">
 
 <script src="/vendor/hljs/highlight.min.js"></script>
-<script src="/vendor/hljs/javascript.min.js"></script>
-<script src="/vendor/hljs/json.min.js"></script>
-<script src="/vendor/hljs/shell.min.js"></script>
-<script src="/vendor/hljs/bash.min.js"></script>
-<script src="/vendor/hljs/cli.min.js"></script>
 
 <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
 <link rel="stylesheet" href="/assets/css/styles.css"></style>
 <link rel="stylesheet" href="/assets/css/code.css">
 
+{{#if SOCKETS}}
 <script>
 const socket = new WebSocket("ws://localhost:8080");
 
-// Connection opened
-socket.addEventListener("open", (event) => {
-  socket.send("Hello Server!");
-});
-
-// Listen for messages
 socket.addEventListener("message", (event) => {
   if (event.data === 'RELOAD') {
     console.log('RELOADING...')
@@ -52,3 +42,4 @@ socket.addEventListener("message", (event) => {
   }
 });
 </script>
+{{/if}}
