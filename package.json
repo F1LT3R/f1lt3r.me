@@ -1,10 +1,10 @@
 {
-  "name": "blog",
+  "name": "f1lt3r-dot-me-dev-blog",
   "version": "1.0.0",
-  "description": "",
+  "description": "F1LT3R.me - Developer Blog",
   "scripts": {
     "build": "NODE_ENV=production node lib/get-posts.mjs",
-    "dev": "NODE_ENV=development node lib/get-posts.mjs"
+    "dev": "npx http-server _site --port 8081 & NODE_ENV=development node lib/get-posts.mjs"
   },
   "type": "module",
   "author": "F1LT3R",
@@ -16,10 +16,12 @@
     "front-matter": "^4.0.2",
     "handlebars": "^4.7.8",
     "highlight.js": "^11.9.0",
+    "http-server": "^14.1.1",
     "markdown-it": "^14.0.0",
     "markdown-it-anchor": "^8.6.7",
     "markdown-it-emoji": "^3.0.0",
     "markdown-it-front-matter": "^0.2.3",
+    "markdown-it-image-lazy-loading": "^2.0.1",
     "markdown-it-linkify-images": "^4.0.0",
     "markdown-it-task-lists": "^2.1.1",
     "ws": "^8.16.0"

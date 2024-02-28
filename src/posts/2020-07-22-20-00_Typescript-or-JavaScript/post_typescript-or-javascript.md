@@ -223,7 +223,7 @@ Object composition in Vanilla JavaScript is anti-fragile. I don't have to keep c
 
 #### Keep The Web Simple
 
-I often wonder how many frontend engineers learn frameworks, libraries and supersets, yet never realize the awesome power of modern JavaScript. 
+I often wonder how many frontend engineers learn frameworks, libraries and super-sets, yet never realize the awesome power of modern JavaScript. 
 
 I love writing pure, enclosed objects, wrapped in the lexical scopes of first class functions, all the way down; There's Very little magic, and a whole lot of beauty.
 

@@ -1,8 +1,155 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&display=swap");
-@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,100i,400,400i,700,700i&display=swap");
-@import url("https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.min.css");
-@import url("https://cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css");
+/* FONTS */
 
+/* Hack */
+
+@font-face {
+    font-family: Hack;
+    src: url(/assets/fonts/hack-regular.woff2) format('woff2');
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Hack;
+    src: url(/assets/fonts/hack-italic.woff2) format('woff2');
+    font-weight: 400;
+    font-style: italic
+}
+
+/* IBM Plex Sans */ 
+
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url(/assets/fonts/ibm-plex-sans-italic-100.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url(/assets/fonts/ibm-plex-sans-italic-200.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(/assets/fonts/ibm-plex-sans-normal-200.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/assets/fonts/ibm-plex-sans-italic-400.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/assets/fonts/ibm-plex-sans-italic-700.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(/assets/fonts/ibm-plex-sans-normal-100.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/assets/fonts/ibm-plex-sans-normal-400.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/assets/fonts/ibm-plex-sans-normal-700.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Lato */
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/assets/fonts/lato-italic-300.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/assets/fonts/lato-normal-300.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/assets/fonts/lato-normal-700.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Fira Code */
+
+@font-face {
+    font-family: 'Fira Code';
+    src: url(/assets/fonts/FiraCode-Light.woff2) format('woff2');
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Fira Code';
+    src: url(/assets/fonts/FiraCode-Regular.woff2);
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Fira Code';
+    src: url(/assets/fonts/FiraCode-Medium.woff2);
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Fira Code';
+    src: url(/assets/fonts/FiraCode-Bold.woff2) format('woff2');
+    font-weight: 700;
+    font-style: normal
+}
+
+/* PAGE LAYOUT */
 
 header {
     background-color: #FF004D;
@@ -90,7 +237,9 @@ footer section.social img {
     height: 24px;
 }
 
-body,h1,h2,h3,h4,h5,h6,p,blockquote,pre,hr,dl,dd,ol,ul,figure {
+/* GENERAL STYLES */
+
+body,h1,h2,h3,h4,h5,h6,p,blockquote,pre,hr,dl,dd,figure {
     margin: 0;
     padding: 0
 }
@@ -112,6 +261,10 @@ body {
 
 h1,h2,h3,h4,h5,h6,p,blockquote,pre,ul,ol,dl,figure {
     margin-bottom: 32px;
+}
+
+ul + p {
+    margin-top: 32px!important;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -160,7 +313,7 @@ ul,ol {
     margin-left: 32px
 }
 
-li>ul,li>ol {
+li>ul, li>ol {
     margin-bottom: 0
 }
 
@@ -190,7 +343,7 @@ blockquote {
     border-left: 32px solid #FF004D;
     padding: 16px;
     margin: 48px 0;
-    font-weight: 100;
+    font-weight: 200;
     box-shadow: 16px 16px 2px rgba(0,0,0,0.2);
     background: rgba(0,0,0,0.8);
     font-family: 'IBM Plex Sans', sans-serif;
@@ -201,7 +354,7 @@ blockquote {
 blockquote::before {
     content: open-quote;
     content: '❯';
-    margin-left: -1.8em;
+    margin-left: -2em;
     position: absolute;
     color: #313232;
     font-weight: bold
@@ -234,7 +387,7 @@ blockquote a:hover {
     color: #000
 }
 
-blockquote p>code,blockquote li>code {
+blockquote p > code, blockquote li > code {
     color: #00FFD4;
     padding: 4px 8px;
     font-weight: 200 !important;
@@ -292,7 +445,7 @@ h2 > code {
     padding: 0 8px;
 }
 
-p > code, li > code {
+p > code, li > code, td > code {
     background: #EFFF00;
     font-family: inherit;
     border-radius: 3px;
@@ -300,7 +453,11 @@ p > code, li > code {
     border: 1px solid rgba(0,0,0,0.1);
     color: #444;
     font-family: Hack, monospace;
-    margin-left: 0 1px
+    margin: 0 1px
+}
+
+td > code {
+    font-size: 14px;
 }
 
 .post-category {
@@ -369,59 +526,6 @@ p > code, li > code {
     margin-right: 4px
 }
 
-li .highlighter-rouge .highlight {
-    margin-bottom: 32px;
-    background-color: #EEE;
-    overflow-x: scroll
-}
-
-li .highlighter-rouge .highlight .highlight {
-    padding: 16px;
-    margin-bottom: 0
-}
-
-li .highlighter-rouge .highlight .highlight>code {
-    padding-right: 32px !important;
-    border: 0;
-    padding-left: 0;
-    padding-bottom: 0
-}
-
-.post-content>.highlighter-rouge {
-    background-color: #EEE;
-    margin-top: 32px;
-    margin-bottom: 32px;
-    padding-top: 32px
-}
-
-.post-content>blockquote>.highlighter-rouge>.highlight>.highlight {
-    white-space: pre-wrap;
-    white-space: -moz-pre-wrap;
-    white-space: -pre-wrap;
-    white-space: -o-pre-wrap;
-    word-wrap: break-word
-}
-
-.post-content>blockquote>.highlighter-rouge>.highlight>.highlight .err,.post-content>blockquote>.highlighter-rouge>.highlight>.highlight .esc,.post-content>blockquote>.highlighter-rouge>.highlight>.highlight .g,.post-content>blockquote>.highlighter-rouge>.highlight>.highlight .l,.post-content>blockquote>.highlighter-rouge>.highlight>.highlight .n,.post-content>blockquote>.highlighter-rouge>.highlight>.highlight .o,.post-content>blockquote>.highlighter-rouge>.highlight>.highlight .x,.post-content>blockquote>.highlighter-rouge>.highlight>.highlight .p,.post-content>blockquote>.highlighter-rouge>.highlight>.highlight .gd,.post-content>blockquote>.highlighter-rouge>.highlight>.highlight .ge,.post-content>blockquote>.highlighter-rouge>.highlight>.highlight .gr,.post-content>blockquote>.highlighter-rouge>.highlight>.highlight .gh,.post-content>blockquote>.highlighter-rouge>.highlight>.highlight .gi,.post-content>blockquote>.highlighter-rouge>.highlight>.highlight .gp,.post-content>blockquote>.highlighter-rouge>.highlight>.highlight .gs,.post-content>blockquote>.highlighter-rouge>.highlight>.highlight .gu,.post-content>blockquote>.highlighter-rouge>.highlight>.highlight .gt,.post-content>blockquote>.highlighter-rouge>.highlight>.highlight .nb,.post-content>blockquote>.highlighter-rouge>.highlight>.highlight .nc,.post-content>blockquote>.highlighter-rouge>.highlight>.highlight .nd,.post-content>blockquote>.highlighter-rouge>.highlight>.highlight .ni,.post-content>blockquote>.highlighter-rouge>.highlight>.highlight .ne,.post-content>blockquote>.highlighter-rouge>.highlight>.highlight .nf,.post-content>blockquote>.highlighter-rouge>.highlight>.highlight .nl,.post-content>blockquote>.highlighter-rouge>.highlight>.highlight .nn,.post-content>blockquote>.highlighter-rouge>.highlight>.highlight .nx,.post-content>blockquote>.highlighter-rouge>.highlight>.highlight .py,.post-content>blockquote>.highlighter-rouge>.highlight>.highlight .ow,.post-content>blockquote>.highlighter-rouge>.highlight>.highlight .ld {
-    color: #fff !important
-}
-
-.post-content>.highlighter-rouge>.highlight>pre.highlight,code.language-cli {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-    padding: 0px 32px;
-    padding-bottom: 32px;
-    overflow-x: scroll;
-    border-radius: 3px
-}
-
-.post-content>.highlighter-rouge>.highlight>pre.highlight>code,code.language-cli>code {
-    border: 0;
-    padding-right: 0;
-    padding-left: 0
-}
-
 .wrapper {
     max-width: -webkit-calc(800px - (32px * 2));
     max-width: calc(800px - (32px * 2));
@@ -460,6 +564,7 @@ input,a,button {
 }
 
 table {
+    font-size: 16px;
     margin-bottom: 32px;
     width: 100%;
     text-align: left;
@@ -469,7 +574,7 @@ table {
 }
 
 table tr:nth-child(even) {
-    background-color: #1fffd9
+    background-color: rgba(31, 255, 218, 0.07)
 }
 
 table th,table td {
@@ -483,7 +588,11 @@ table th {
 }
 
 table td {
-    border: 1px solid #00FFD4
+    border: 1px solid rgba(0, 255, 212, 0.33)
+}
+
+table {
+    border: 2px solid #00FFD4;
 }
 
 .site-header {
@@ -759,7 +868,7 @@ code.language-sh {
     box-shadow: 16px 16px 2px rgba(0,0,0,0.2);
     font-size: 16px;
     color: #00FFD4;
-    background: linear-gradient(to right, #313232 60px, rgba(49,50,50,0) 60px) 100% 100%,url(/img/site/ellipsis.svg),#313232;
+    background: linear-gradient(to right, #313232 60px, rgba(49,50,50,0) 60px) 100% 100%,url(/assets/img/ellipsis.svg),#313232;
     background-repeat: no-repeat;
     background-size: 20px 100%, 24px 20px;
     background-attachment: local, scroll;
@@ -775,7 +884,7 @@ code.language-sh .hljs-comment {
 
 code.language-sh::before {
     content: "$";
-    margin-left: -2.2em;
+    margin-left: -2.3em;
     position: absolute;
     color: #313232;
     font-weight: bold
@@ -793,9 +902,9 @@ code.language-sh-wrap {
     margin-bottom: 64px;
     font-weight: 100;
     box-shadow: 16px 16px 2px rgba(0,0,0,0.2);
-    font-size: 20px;
+    font-size: 16px;
     color: #00FFD4;
-    background: linear-gradient(to right, #313232 60px, rgba(49,50,50,0) 60px) 100% 100%,url(/img/site/ellipsis.svg),#313232;
+    background: linear-gradient(to right, #313232 60px, rgba(49,50,50,0) 60px) 100% 100%,url(/assets/img/ellipsis.svg),#313232;
     background-repeat: no-repeat;
     background-size: 20px 100%, 24px 20px;
     background-attachment: local, scroll;
@@ -1100,44 +1209,6 @@ body:not(.wide) .page-content {
         color: #000
     }
 
-    div.post-content>div.highlighter-rouge {
-        background: #232323
-    }
-
-    .highlighter-rouge code {
-        font-size: 1.2em !important
-    }
-
-    .highlighter-rouge {
-        filter: saturate(400%);
-        background: #333;
-        color: #CCA
-    }
-
-    .highlighter-rouge .c1,.highlighter-rouge .cm {
-        background: #000
-    }
-
-    .highlighter-rouge .nx {
-        color: #FFF
-    }
-
-    .highlighter-rouge .nc {
-        color: #777
-    }
-
-    .highlighter-rouge .o,.highlighter-rouge .p {
-        color: #AAA
-    }
-
-    .highlighter-rouge .nb {
-        color: #AAA
-    }
-
-    .highlighter-rouge .highlight .c {
-        background-color: #252525 !important
-    }
-
     .page-link {
         font-weight: 600 !important
     }
@@ -1209,46 +1280,91 @@ iframe.video {
     min-height: 360px
 }
 
+/* HIGHLIGHT JS */
 
-
-/* @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&display=swap");
-@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,100i,400,400i,700,700i&display=swap");
-@import url("https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css");
-
-body,h1,h2,h3,h4,h5,h6,p,blockquote,pre,hr,dl,dd,ol,ul,figure {
-    margin: 0;
-    padding: 0
+pre code.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 1em;
 }
 
-::selection {
-    background: #EFFF00;
-    color: #000;
+code.hljs {
+    padding:3px 5px;
 }
 
-body {
-    font-style: normal;
-    font: 400 20px/1.5 "Lato",sans-serif;
-    color: #000;
-    background-color: #fff;
-    -webkit-text-size-adjust: 100%;
-    -webkit-font-feature-settings: "kern" 1;
-    -moz-font-feature-settings: "kern" 1;
-    -o-font-feature-settings: "kern" 1;
-    font-feature-settings: "kern" 1;
-    font-kerning: normal;
-    -webkit-text-size-adjust: 100%;
+.hljs {
+    color: #444;
+    background-color: #EEE;
 }
 
-
-.markdown-body {
-    box-sizing: border-box;
-    min-width: 200px;
-    max-width: 640px;
+.hljs-comment,
+.hljs-quote {
+    color: #444;
+    background-color: #efff00cc; 
+    font-style: italic;
 }
 
-
-
-.container {
-    max-width: 640px;
-    margin: 0 auto;
+.hljs-doctag,
+.hljs-formula,
+.hljs-keyword {
+    color: #00b394;
 }
+
+.hljs-deletion,
+.hljs-name,
+.hljs-section,
+.hljs-selector-tag,
+.hljs-subst {
+    color:#e06c75
+}
+
+.hljs-literal {
+    color:#56b6c2
+}
+
+.hljs-addition,
+.hljs-attribute,
+.hljs-meta .hljs-string,
+.hljs-regexp,
+.hljs-string {
+    color: #0086f7;
+}
+
+.hljs-attr,
+.hljs-number,
+.hljs-selector-attr,
+.hljs-selector-class,
+.hljs-selector-pseudo,
+.hljs-template-variable,
+.hljs-type,
+.hljs-variable {
+    color:#FF004D;
+}
+
+.hljs-bullet,
+.hljs-link,
+.hljs-meta,
+.hljs-selector-id,
+.hljs-symbol,
+.hljs-title {
+    color:#61aeee;
+}
+
+.hljs-built_in,
+.hljs-class .hljs-title,
+.hljs-title.class_ {
+    color:#FF8844;
+}
+
+.hljs-emphasis {
+    font-style: italic;
+}
+
+.hljs-strong {
+    font-weight: 700;
+}
+
+.hljs-link {
+    text-decoration: underline;
+}
+

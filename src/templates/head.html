@@ -24,12 +24,12 @@
 <meta name="twitter:site" content="{{twitter_site}}"> 
 <meta name="twitter:creator" content="{{twitter_creator}}">
 
-<script src="/vendor/hljs/highlight.min.js"></script>
+<script async defer src="/vendor/hljs/highlight.min.js"></script>
 
-<link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+<!-- <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" /> -->
 
-<link rel="stylesheet" href="/assets/css/styles.css"></style>
-<link rel="stylesheet" href="/assets/css/code.css">
+<link rel="preload" href="/assets/css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/assets/css/styles.css"></noscript>
 
 {{#if SOCKETS}}
 <script>
