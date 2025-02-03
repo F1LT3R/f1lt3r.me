@@ -6,7 +6,11 @@ featured: true
 tags: [Agile, Scrum, Story Points, Time, Complexity]
 excerpt: 'Need to kill processes by port? Try this script that lets you kill multiple processes on multiple ports simultaneously.'
 authors: [F1LT3R]
-type: script
+type: script,
+updated: [
+	2025-02-03-12-00,
+	2025-02-03-13-00
+]
 ---
 
 Need to kill processes by port? Try this...

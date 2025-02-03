@@ -1,9 +1,10 @@
 {
     "cSpell.words": [
-        "copydir",
-        "datetime",
-        "linkify",
-        "markdownit",
-        "ogtype"
-    ]
+		"copydir",
+		"datetime",
+		"datetimes",
+		"linkify",
+		"markdownit",
+		"ogtype"
+	]
 }

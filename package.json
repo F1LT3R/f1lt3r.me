@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "F1LT3R.me - Developer Blog",
   "scripts": {
-    "build": "NODE_ENV=production node lib/get-posts.mjs",
-    "dev": "npx http-server _site --port 8081 & NODE_ENV=development node lib/get-posts.mjs"
+    "build": "NODE_ENV=production node lib/build.mjs",
+    "dev": "NODE_ENV=development node lib/build.mjs"
   },
   "type": "module",
   "author": "F1LT3R",
