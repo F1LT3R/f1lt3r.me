@@ -1,9 +1,7 @@
 ---
-title: 'Home'
-permalink: /
-thumbnail: thumbnail_down-boy-kill-processes-by-port.jpg
-featured: true
-tags: [Home]
+title: 'About'
+permalink: about
+tags: [About]
 excerpt: 'Need to kill processes by port? Try this script that lets you kill multiple processes on multiple ports simultaneously.'
 authors: [F1LT3R]
 type: page
