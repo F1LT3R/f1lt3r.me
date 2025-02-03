@@ -55,6 +55,8 @@
 
     "build": {
         "watch_dir": "src",
+		
+		"site_dir": "./_site",
 
         "posts_dir": {
             "src": "src/posts",
