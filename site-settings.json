@@ -55,6 +55,7 @@
 
     "build": {
         "watch_dir": "src",
+		"watch_template_dir": "src/templates/",
 		
 		"site_dir": "./_site",
 
