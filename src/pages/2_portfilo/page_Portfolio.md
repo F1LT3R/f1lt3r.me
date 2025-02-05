@@ -6,10 +6,10 @@ navItem: true
 excerpt: 'Fill excerpt here.'
 authors: [F1LT3R]
 layout: portfolio
-date: 2025-02-03-11-46
+date: 2025-02-04-11-46
 updated: [
-	2025-02-03-12-00,
-	2025-02-03-13-00
+	2025-02-04-12-00,
+	2025-02-04-13-00
 ]
 ---
 
@@ -18,7 +18,6 @@ updated: [
 This is some home content.
 
 > Here is a quote!
-
 
 - This
 - Is

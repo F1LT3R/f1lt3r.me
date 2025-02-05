@@ -2,14 +2,7 @@
     "site": {
         "title": "F1LT3R",
         "excerpt": "My Developer Blog",
-        "keywords": [
-            "F1LT3R",
-            "blog",
-            "development",
-            "JavaScript",
-            "web",
-            "mobile"
-        ],
+        "keywords": ["F1LT3R", "blog", "development", "JavaScript", "web", "mobile"],
         "permalink": "https://f1lt3r.me",
         "baseurl": "https://f1lt3r.me",
         "ogtype": "website",
@@ -39,7 +32,6 @@
             "type": "LinkedIn",
             "url": "https://linked.in/F1LT3R",
             "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
-           
         },
         {
             "type": "DEV.to",
@@ -54,26 +46,28 @@
     ],
 
     "build": {
+        "auto_clean": true,
+
         "watch_dir": "src",
-		"watch_template_dir": "src/templates/",
-		
-		"site_dir": "./_site",
+        "watch_template_dir": "src/templates/",
+
+        "site_dir": "./_site",
 
         "home_dir": {
             "src": "src/home",
             "dist": "_site"
         },
 
-		"pages_dir": {
-			"src": "src/pages",
-			"dist": "_site/pages"
-		},
+        "pages_dir": {
+            "src": "src/pages",
+            "dist": "_site/pages"
+        },
 
         "posts_dir": {
             "src": "src/posts",
             "dist": "_site/posts"
         },
-        
+
         "copy_files": [
             {
                 "src": "src/assets",
