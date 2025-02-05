@@ -1,10 +1,11 @@
 ---
 title: 'About'
 permalink: about
+navItem: true
 tags: [About]
-excerpt: 'Need to kill processes by port? Try this script that lets you kill multiple processes on multiple ports simultaneously.'
+excerpt: 'Fill excerpt here.'
 authors: [F1LT3R]
-type: page
+layout: page
 date: 2025-02-03-11-46
 updated: [
 	2025-02-03-12-00,

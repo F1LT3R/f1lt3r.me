@@ -59,14 +59,19 @@
 		
 		"site_dir": "./_site",
 
+        "home_dir": {
+            "src": "src/home",
+            "dist": "_site"
+        },
+
+		"pages_dir": {
+			"src": "src/pages",
+			"dist": "_site/pages"
+		},
+
         "posts_dir": {
             "src": "src/posts",
             "dist": "_site/posts"
-        },
-
-        "pages_dir": {
-            "src": "src/pages",
-            "dist": "_site/pages"
         },
         
         "copy_files": [
