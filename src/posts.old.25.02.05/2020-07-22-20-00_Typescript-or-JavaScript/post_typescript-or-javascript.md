@@ -41,16 +41,16 @@ For example: here is the Enclosed Object equivalent of a Class:
 ```js
 // Counter.mjs
 export const Counter = (count = 0) => ({
-  add: () => (count += 1),
-  get count() {
-    return count;
-  },
-});
+    add: () => (count += 1),
+    get count() {
+        return count
+    },
+})
 
-const counter = Counter(2);
-counter.add();
-counter.add();
-console.log(counter.count); // 4
+const counter = Counter(2)
+counter.add()
+counter.add()
+console.log(counter.count) // 4
 ```
 
 This kind of object composition is easier to reason about. The [memory footprint and CPU load of Object Composition](https://github.com/F1LT3R/js-oop-perf) is identical to Classes and Prototypes.
@@ -60,18 +60,18 @@ Let's compose...
 ```js
 // Counters.mjs
 
-import { Counter } from './Counter.mjs';
+import { Counter } from './Counter.mjs'
 
 export const Counters = (...counters) => ({
-  add: () => counters.map((counter) => counter.add()),
-  get count() {
-    return counters.map((counter) => counter.count);
-  },
-});
+    add: () => counters.map((counter) => counter.add()),
+    get count() {
+        return counters.map((counter) => counter.count)
+    },
+})
 
-const counters = Counters(Counter(0), Counter(1));
-counters.add();
-console.log(counters.count); // [ 1, 2 ]
+const counters = Counters(Counter(0), Counter(1))
+counters.add()
+console.log(counters.count) // [ 1, 2 ]
 ```
 
 ### Extensible Object Composition
@@ -82,35 +82,34 @@ We can make our pattern more extensible. Here is a similar object composition, a
 // Employee.mjs
 
 const methods = () => ({
-  work() {
-    this.product += this.productivity;
-  },
+    work() {
+        this.product += this.productivity
+    },
 
-  report() {
-    console.log(
-      `I'm ${this.name}, a ${this.role}.
-       I produced ${this.product} units.`
-    );
-  }
-});
+    report() {
+        console.log(
+            `I'm ${this.name}, a ${this.role}.
+       I produced ${this.product} units.`,
+        )
+    },
+})
 
-export const Employee = name => ({
-  name,
-  role: 'worker',
-  productivity: 2,
-  product: 0,
-  ...methods()
-});
+export const Employee = (name) => ({
+    name,
+    role: 'worker',
+    productivity: 2,
+    product: 0,
+    ...methods(),
+})
 
-const al = Employee('Al');
-al.work();
-al.report();
+const al = Employee('Al')
+al.work()
+al.report()
 
 // I'm Al, a worker. I produced 2 units.
 ```
 
 Let's extend...
-
 
 ```js
 // Manager.mjs
@@ -118,27 +117,24 @@ Let's extend...
 import { Employee } from './Employee.mjs'
 
 const accept = () => ({
-  accept({ role, productivity }) {
-    Object.assign(this, {
-      role,
-      productivity
-    });
-  }
-});
+    accept({ role, productivity }) {
+        Object.assign(this, {
+            role,
+            productivity,
+        })
+    },
+})
 
-const al = Object.assign(
-  Employee('Al'),
-  accept()
-);
+const al = Object.assign(Employee('Al'), accept())
 
 const promotion = {
-  role: 'manager',
-  productivity: 1
-};
+    role: 'manager',
+    productivity: 1,
+}
 
-al.accept(promotion);
-al.work();
-al.report();
+al.accept(promotion)
+al.work()
+al.report()
 // I'm Al, a manager. I produced 1 units.
 ```
 
@@ -147,29 +143,26 @@ JavaScript's `this` keyword is unnecessary. The same result can be achieved by p
 ```js
 // Employee.mjs
 
-const work = state => ({
-  work: () => {
-    state.product += state.productivity;
-  }
-});
+const work = (state) => ({
+    work: () => {
+        state.product += state.productivity
+    },
+})
 
-export const Employee = name => {
-  const employee = {
-    name,
-    role: 'worker',
-    productivity: 2,
-    product: 0
-  };
+export const Employee = (name) => {
+    const employee = {
+        name,
+        role: 'worker',
+        productivity: 2,
+        product: 0,
+    }
 
-  return Object.assign(
-    employee,
-    work(employee)
-  );
-};
+    return Object.assign(employee, work(employee))
+}
 
-const al = Employee('Al');
-al.work();
-console.log(al.product); // 2
+const al = Employee('Al')
+al.work()
+console.log(al.product) // 2
 ```
 
 ### Using Mixins
@@ -178,43 +171,43 @@ Here's how we can use this pattern to extend the counter with mixins. We can do 
 
 ```javascript
 const Counter = (count = 0) => ({
-  add: () => (count += 1),
-  get count() {
-    return count;
-  }
-});
+    add: () => (count += 1),
+    get count() {
+        return count
+    },
+})
 
-let counter = Counter(0);
-counter.add();
-counter.count;
-console.log(counter.count); // 1
+let counter = Counter(0)
+counter.add()
+counter.count
+console.log(counter.count) // 1
 
 const subtract = () => ({
-  subtract() {
-    this.count -= 1;
-  }
-});
+    subtract() {
+        this.count -= 1
+    },
+})
 
 const multiply = () => ({
-  multiply(amount) {
-    this.count *= amount;
-  }
-});
+    multiply(amount) {
+        this.count *= amount
+    },
+})
 
 const extend = (base, ...mixins) =>
-  Object.assign(
-    {
-      ...base
-    },
-    ...mixins.map(method => method())
-  );
+    Object.assign(
+        {
+            ...base,
+        },
+        ...mixins.map((method) => method()),
+    )
 
-counter = extend(counter, subtract, multiply);
-counter.subtract();
-counter.subtract();
-console.log(counter.count); // -1
-counter.multiply(2);
-console.log(counter.count); // -2
+counter = extend(counter, subtract, multiply)
+counter.subtract()
+counter.subtract()
+console.log(counter.count) // -1
+counter.multiply(2)
+console.log(counter.count) // -2
 ```
 
 ### Anti-Fragile
@@ -223,7 +216,7 @@ Object composition in Vanilla JavaScript is anti-fragile. I don't have to keep c
 
 #### Keep The Web Simple
 
-I often wonder how many frontend engineers learn frameworks, libraries and super-sets, yet never realize the awesome power of modern JavaScript. 
+I often wonder how many frontend engineers learn frameworks, libraries and super-sets, yet never realize the awesome power of modern JavaScript.
 
 I love writing pure, enclosed objects, wrapped in the lexical scopes of first class functions, all the way down; There's Very little magic, and a whole lot of beauty.
 

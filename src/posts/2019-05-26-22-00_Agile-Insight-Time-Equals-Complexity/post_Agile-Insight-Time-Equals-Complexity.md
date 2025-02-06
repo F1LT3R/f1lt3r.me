@@ -22,7 +22,6 @@ The idea is that over time, a team will normalize on some fuzzy, but shared idea
 
 One team’s idea of a Story Point does not necessarily match another teams idea of a Story Point. This is a problem for the organization because variability in measures makes forecasting more unreliable. Forecasting is already unreliable enough.
 
-
 Businesses place a high value on knowing how long it takes deliver software, and though it is not possible to know how long it really takes, the business can not act until it has counted the cost. Even though the cost is wrong, it’s closer than it was when you didn’t guess.
 
 **So why make it harder for the organization by using an inconsistent measure?**
@@ -33,7 +32,7 @@ Businesses place a high value on knowing how long it takes deliver software, and
 
 Complex tasks take longer than simple tasks. Simple tasks can be broken down more easily than complex tasks, therefore they can be shorter. Breaking complex tasks down is hard, and takes time.
 
-If you have a simple task that takes a day, and a complex task that takes a day, both tasks add the same value to your average velocity. 
+If you have a simple task that takes a day, and a complex task that takes a day, both tasks add the same value to your average velocity.
 
 So what does it mean that one task is simple and one is complex?
 
@@ -59,11 +58,11 @@ Let `c = complexity`, `t = time` and `sp = Story Points`
 1. Simple-Short: `1c + 1t = 2sp`
 2. Simple-Long: `1c + 2t = 3sp`
 3. Complex-Short: `2c + 1t = 3sp`
-4. Complex-Long: `3c + 3t = 6sp` 
+4. Complex-Long: `3c + 3t = 6sp`
 
-In the example above, the Simple-Long task and the Complex-Short task are both estimated to be `3sp`. In this case, the engineers are estimating that both tasks will take a similar amount of effort. 
+In the example above, the Simple-Long task and the Complex-Short task are both estimated to be `3sp`. In this case, the engineers are estimating that both tasks will take a similar amount of effort.
 
-Then some haunted soul is forced to calculate the average velocity of the team (story points per sprint), and use that average to gate how many stories can fit into the next sprint. 
+Then some haunted soul is forced to calculate the average velocity of the team (story points per sprint), and use that average to gate how many stories can fit into the next sprint.
 
 The multidimensional Story Point has now been boiled back down to the linear dimension of time.
 
@@ -77,7 +76,7 @@ The estimate for our Complex-Short task might be justified like this:
 
 That `3sp` will be used to measure against points from another sprint, which maps to a value of time. So what you’re actually saying is:
 
-> “That Short-Complex story will likely take me *three days*.”
+> “That Short-Complex story will likely take me _three days_.”
 
 … even though you did not provide your estimate in days.
 
@@ -93,13 +92,13 @@ Then you might answer:
 
 Now we have a measure of three days, or `3d`.
 
-Because we are flattening Complexity down to Time anyway, we may as well just estimate in days. 
+Because we are flattening Complexity down to Time anyway, we may as well just estimate in days.
 
 No Agile magic required.
 
 ## Day Points - A Standard Measure
 
-**A day means a day, for any team** 
+**A day means a day, for any team**
 
 While it’s true that one team may be able to get more done in a day than another, at least everyone can use a standard measure to estimate future work: one day.
 
